@@ -1,9 +1,10 @@
-function App() {
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from './router';
+
+export function App() {
   return (
-    <div className='container grid h-screen place-items-center'>
-      <h1 className='text-4xl font-bold'>Hello World</h1>
-    </div>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 }
-
-export default App;
