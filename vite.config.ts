@@ -7,6 +7,7 @@ const PATH_SRC = path.resolve(__dirname, './src');
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  plugins: [react(), Unocss()],
   server: {
     port: 4000,
   },
@@ -15,5 +16,4 @@ export default defineConfig({
       '~/': `${PATH_SRC}/`,
     },
   },
-  plugins: [react(), Unocss()],
 });
